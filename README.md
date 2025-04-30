@@ -2,69 +2,58 @@
 A movie recommendation system suggests films to users based on their preferences, viewing history, or similar users' choices. It uses techniques like content-based filtering, collaborative filtering, or hybrid methods to provide personalized movie suggestions, helping users discover new content easily.
 Movie Recommendation Tool 🍿
 This is a web-based application that provides personalized movie recommendations based on user preferences. Users can describe their mood, favorite genres, or movies they like, and the tool will suggest movies with trailers and additional details.
+# Movie Recommender
 
-Features
-User Authentication:
+The **Movie Recommender** is a web application that provides personalized movie recommendations based on user preferences, moods, and genres. It features user authentication, language-based filtering, and integration with external APIs for enhanced functionality.
 
-Login and Sign-up functionality for personalized sessions.
-User sessions are managed using local storage.
-Movie Recommendations:
+## Features
 
-Suggests movies based on user input and selected language preferences.
-Fetches movie data dynamically using the OMDb API.
-Displays movie posters, titles, and trailer links.
-Responsive Design:
+- **User Authentication**:
+  - Users can sign up, log in, and log out.
+  - User credentials are stored securely in `localStorage`.
+  - Session management ensures a seamless user experience.
 
-Fully responsive UI for desktop and mobile devices.
-Language Selection:
+- **Movie Recommendations**:
+  - Users can describe their mood, favorite genres, or movies they like to get tailored recommendations.
+  - Supports multiple languages, including Hollywood, Bollywood, Telugu, Hindi, English, and Korean.
 
-Users can choose from multiple languages (e.g., Hollywood, Bollywood, Telugu, Korean).
-Error Handling:
+- **API Integration**:
+  - **Gemini API**: Generates movie recommendations based on user input.
+  - **OMDb API**: Fetches additional movie details, including posters.
 
-Graceful error handling for API failures or invalid inputs.
-Technologies Used
-Frontend:
+- **Responsive Design**:
+  - Optimized for both desktop and mobile devices.
+  - Includes a clean and modern UI with interactive elements.
 
-HTML5, CSS3, JavaScript
-Responsive design using CSS media queries
-APIs:
+- **Error Handling**:
+  - Displays user-friendly error messages for invalid inputs or API failures.
 
-OMDb API for fetching movie details.
-Google Generative AI API for advanced recommendations (optional).
-Libraries:
+## Project Structure
 
-Showdown.js for Markdown rendering.
-Google Generative AI SDK (optional).
-Installation and Setup
-Clone the Repository:
+## Technologies Used
 
-Set Up the OMDb API Key:
+- **HTML**: For structuring the web page.
+- **CSS**: For styling the application.
+- **JavaScript**: For client-side logic and API integration.
+- **Gemini API**: For generating movie recommendations.
+- **OMDb API**: For fetching movie details like posters and metadata.
 
-Obtain an API key from OMDb API.
-Replace your-omdb-api-key in script.js with your actual API key:
-Set Up Google Generative AI API Key (Optional):
+## How It Works
 
-Obtain an API key from Google Generative AI.
-Replace your-gemini-api-key in script.js with your actual API key:
-Run the Application:
+1. **Authentication**:
+   - Users can sign up or log in.
+   - User credentials are stored in `localStorage` under the key `users`.
+   - The last logged-in user is remembered using the `lastUser` key.
 
-Open movie.html in your browser to start the application.
-Usage
-Login or Sign Up:
+2. **Movie Recommendations**:
+   - Users describe their preferences in a text box.
+   - The app sends a request to the Gemini API to fetch recommendations.
+   - The OMDb API is used to fetch additional details like movie posters.
 
-Enter your username and password to log in or create a new account.
-Select Language:
+3. **Language Filtering**:
+   - Users can select a preferred language (e.g., Hollywood, Bollywood, etc.) for recommendations.
 
-Choose your preferred language (e.g., Hollywood, Bollywood, etc.).
-Describe Your Preferences:
+4. **Error Handling**:
+   - Displays error messages for invalid inputs or API failures.
+   - Retries API requests in case of temporary failures.
 
-Enter your mood, favorite genres, or movies you like in the text area.
-Get Recommendations:
-
-Click the "Get Recommendations" button to fetch movie suggestions.
-View Results:
-
-The results section will display movie cards with posters, titles, and trailer links.
-Logout:
-
-Click the "Logout" button to end your session.
