@@ -1,8 +1,4 @@
-# movie-recommendation
-A movie recommendation system suggests films to users based on their preferences, viewing history, or similar users' choices. It uses techniques like content-based filtering, collaborative filtering, or hybrid methods to provide personalized movie suggestions, helping users discover new content easily.
-Movie Recommendation Tool 🍿
-This is a web-based application that provides personalized movie recommendations based on user preferences. Users can describe their mood, favorite genres, or movies they like, and the tool will suggest movies with trailers and additional details.
-# Movie Recommender
+
 
 The **Movie Recommender** is a web application that provides personalized movie recommendations based on user preferences, moods, and genres. It features user authentication, language-based filtering, and integration with external APIs for enhanced functionality.
 
